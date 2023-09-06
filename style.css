@@ -1,0 +1,58 @@
+/* ****Geral**** */
+body{
+    padding: 0%;
+    box-sizing: border-box;
+    font: normal 16px/22px Sans-serif;
+}
+
+/* Títulos */
+h2{
+    font-size: 2.5em;
+}
+h2 span, h3{
+    font-size: 1.5em;
+}
+
+/* ***Hero Book*** */
+
+@media (max-width: 768px){
+    .hero-book{
+        background: #7738c9;
+        height: 600px;
+        padding: 0 60px;
+        color: #FFF;
+    }
+    .title-book h1{
+        font-size: 4em;
+        line-height: 0.8em;
+    }
+    .title-book h1 span{
+        font-size: 0.38em;
+        display: block;
+    }
+    .title-book h2{
+        font-size: 0.8em;
+        color: #44d1b6;
+    }
+    .title-book p{
+        font-size: 1em;
+        background: #44d1b6;
+        padding: 15px;
+        display: inline-block;
+    }
+    .wrap-book p{
+        background: #ffb300 no-repeat;
+        width: 68px;
+        height: 68px;
+        font-size: 0.7em;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.2em;
+        box-shadow: 0px 3px 6px #000;
+        border-radius: 50%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
