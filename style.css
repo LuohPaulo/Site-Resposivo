@@ -1,4 +1,5 @@
 /* ****Geral**** */
+
 body{
     padding: 0%;
     box-sizing: border-box;
@@ -6,6 +7,12 @@ body{
 }
 
 /* Títulos */
+
+a{
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+}
 h2{
     font-size: 2.5em;
 }
@@ -18,8 +25,7 @@ h2 span, h3{
 @media (max-width: 768px){
     .hero-book{
         background: #7738c9;
-        height: 600px;
-        padding: 0 60px;
+        padding: 90px 60px;
         color: #FFF;
     }
     .title-book h1{
@@ -40,7 +46,18 @@ h2 span, h3{
         padding: 15px;
         display: inline-block;
     }
+
+    .wrap-book{
+        position: relative;
+    }
+
+    .wrap-book .book{
+        width: 100%;
+    }
     .wrap-book p{
+        position: absolute;
+        top: -40px;
+        left: -50px;
         background: #ffb300 no-repeat;
         width: 68px;
         height: 68px;
@@ -54,5 +71,20 @@ h2 span, h3{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .wrap-BTN{
+
+    }
+    .BTN-orange{
+        background: #FFB300;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: -10px 5px 1px #FFF, 
+                    5px 10px 1px 10px #7738c9, 
+                    1px 15px 1px 15px #FFF;
     }
 }

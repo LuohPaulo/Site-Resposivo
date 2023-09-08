@@ -127,7 +127,7 @@ button,
     [type="button"], 
     [type="reset"], 
     [type="submit"] {
-        -webkit-appearance: buttom;
+        --webkit-appearance: buttom;
 }
   
   /* Remova a borda interna e o preenchimento no Firefox.*/
@@ -188,7 +188,7 @@ textarea {
   /* 1. Corrija a aparência estranha no Chrome e no Safari.
      2. Corrija o estilo do contorno no Safari.*/
 [type="search"] {
-    -webkit-appearance: textfield;  /* 1 */
+    --webkit-appearance: textfield;  /* 1 */
     outline-offset: -2px;           /* 2 */
 }
   
