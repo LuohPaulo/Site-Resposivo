@@ -50,6 +50,7 @@ h2 span, h3{
 
     .wrap-book{
         position: relative;
+        width: 100%;
     }
 
     .wrap-book .book{
