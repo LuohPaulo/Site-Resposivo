@@ -4,6 +4,7 @@ body{
     padding: 0px;
     box-sizing: border-box;
     font: normal 16px/22px Sans-serif;
+    margin: 0;
 }
 
 /* Títulos */
@@ -19,15 +20,23 @@ h2{
 h2 span, h3{
     font-size: 1.5em;
 }
+li{
+    list-style: none;
+}
 
 /* ***Hero Book*** */
 
 @media (max-width: 768px){
     .hero-book{
         background: #7738c9;
-        padding: 90px 60px;
+        padding: 150px 60px;
         color: #FFF;
-        margin: 0px;
+        margin-top: -100px;
+        transform: skewy(10deg);
+        
+    }
+    .title-book, .wrap-book, .wrap-BTN{
+        transform: skewy(-10deg);
     }
     .title-book h1{
         font-size: 4em;
@@ -74,10 +83,8 @@ h2 span, h3{
         justify-content: center;
         align-items: center;
     }
-    .wrap-BTN{
-        
-    }
     .BTN-orange{
+        margin-top: 60px;
         background: #FFB300;
         width: 100%;
         padding: 15px 0px;
@@ -90,4 +97,42 @@ h2 span, h3{
                     0px 12px 1px 6px #7738c9,
                     0px 12px 1px 8px #FFF;
     }
+/* - ***** Section APRENDER ***** - */
+    .aprender{
+        text-align: center;
+    }
+    .cards-aprender{
+        padding: 0;        
+    }
+    .title-aprender{
+        
+    }
+    .title-aprender p{
+        text-transform: uppercase;
+
+    }
+    .item-cards-aprender i{
+        position: relative;
+        color: #7738c9;
+        width: 68px;
+        height: 68px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 15px;
+        border-radius: 50%;
+        border: 2px solid #7738c9;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-cards-aprender i p{
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        background-color: #44d1b6;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    
 }
