@@ -35,7 +35,7 @@ li{
         transform: skewy(10deg);
         
     }
-    .title-book, .wrap-book, .wrap-BTN{
+    .title-book, .wrap-book, .wrap-BTN, .cubo{
         transform: skewy(-10deg);
     }
     .title-book h1{
@@ -97,6 +97,41 @@ li{
                     0px 12px 1px 6px #7738c9,
                     0px 12px 1px 8px #FFF;
     }
+    .cubo{
+        width: 70px;
+        height: 70px;
+        transform-style: preserve-3d;
+          
+    }
+    .lado-sup .lado-esq .lado-dir{
+        position: absolute;
+    }
+    .lado-sup{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transform: skew(45deg, -180deg);
+    }
+    .lado-esq{
+        position: absolute;
+        top: -10px;
+        left: 35px;
+        width: 72%;
+        height: 60%;
+        background-color: #44d1b6;
+        transform: skewY(30deg);
+    }
+    .lado-dir{
+        position: absolute;
+        top: -53px;
+        left: 35px;
+        width: 72%;
+        height: 60%;
+        background-color: #6709e2;
+        transform: skewY(-30deg);
+    }
+
+
 /* - ***** Section APRENDER ***** - */
     .aprender{
         text-align: center;
