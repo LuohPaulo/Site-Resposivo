@@ -29,7 +29,7 @@ li{
 @media (max-width: 768px){
     .hero-book{
         background: #7738c9;
-        padding: 150px 60px;
+        padding: 90px 60px;
         color: #FFF;
         margin-top: -100px;
         transform: skewy(10deg);
@@ -96,41 +96,38 @@ li{
                     0px 6px 0px 4px #FFF,
                     0px 12px 1px 6px #7738c9,
                     0px 12px 1px 8px #FFF;
-    }
-    .cubo{
+    }.cubo {
+        position: relative;
+        margin: 0 auto;
+        top: 110px;;
         width: 70px;
         height: 70px;
-        transform-style: preserve-3d;
-          
     }
-    .lado-sup .lado-esq .lado-dir{
-        position: absolute;
-    }
-    .lado-sup{
+    .lado-sup {
+        position: fixed;
         width: 100%;
         height: 100%;
         background-color: #fff;
-        transform: skew(45deg, -180deg);
+        transform: rotateZ(45deg) skew(-15deg, -15deg);
     }
-    .lado-esq{
+    .lado-esq {
         position: absolute;
-        top: -10px;
-        left: 35px;
-        width: 72%;
-        height: 60%;
+        top: 53px;
+        left: -28px;
+        width: 90%;
+        height: 40%;
         background-color: #44d1b6;
         transform: skewY(30deg);
     }
-    .lado-dir{
+    .lado-dir {
         position: absolute;
-        top: -53px;
+        top: 53px;
         left: 35px;
-        width: 72%;
-        height: 60%;
+        width: 90%;
+        height: 40%;
         background-color: #6709e2;
         transform: skewY(-30deg);
     }
-
 
 /* - ***** Section APRENDER ***** - */
     .aprender{
@@ -169,5 +166,4 @@ li{
         height: 20px;
         border-radius: 50%;
     }
-    
 }
