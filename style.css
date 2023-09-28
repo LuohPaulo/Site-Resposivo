@@ -30,10 +30,11 @@ li{
 @media (max-width: 768px){
     .hero-book{
         background: #7738c9;
-        padding: 90px 60px;
+        padding: 90px 50px;
         color: #FFF;
         margin-top: -100px;
         transform: skewy(10deg);
+        text-align: center;
         
     }
     .title-book, .wrap-book, .wrap-BTN, .cubo{
@@ -42,6 +43,7 @@ li{
     .title-book h1{
         font-size: 4em;
         line-height: 0.8em;
+        margin-top: 15px;
     }
     .title-book h1 span{
         font-size: 0.38em;
@@ -50,17 +52,22 @@ li{
     .title-book h2{
         font-size: 0.8em;
         color: #44d1b6;
+        margin-top: -50px;
+       
     }
     .title-book p{
         font-size: 1em;
         background: #44d1b6;
-        padding: 15px;
+        padding: 10px;
+        margin-top: 40px;
         display: inline-block;
     }
 
     .wrap-book{
         position: relative;
         width: 100%;
+        margin-top: 100px;
+
     }
 
     .wrap-book .book{
@@ -322,6 +329,10 @@ li{
     .description-author{
         margin: 30px 0;
         font-size: 1em;
+    }
+
+    svg{
+        border: 1px solid black;
     }
 
 
