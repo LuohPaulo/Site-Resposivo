@@ -179,7 +179,7 @@ li{
         font-size: 50px;
     }
 
-    /* ***** Section Chapter-Book***** */
+    /* ***** Section Chapter-Book ***** */
     ul{
         margin: 0;
         padding: 0;
@@ -273,7 +273,56 @@ li{
         margin: 0 auto;
     }
 
+    /* *** Section Chapter-Book *** */
 
+    .wrap-photo-author{
+        width: 256px;
+        height: 256px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .wrap-photo-author img {
+        position: relative;
+        width: 85%;
+        top: 13px;
+        left: 17px;
+        z-index: 3;
+    }
+    .roxo {
+        position: relative;
+        background: #7738c9;
+        width: 88%;
+        height: 95%;
+        top: -452px;
+        left: 31px;
+        z-index: 2;
+    }
+    .verde {
+        position: relative;
+        background: #44d1b6;
+        width: 85%;
+        height: 89%;
+        top: -196px;
+        z-index: 1;
+    }
+    .wrap-content-author{
+        padding: 0 60px;
+    }
+    .wrap-content-author header{
+        margin-top: 50px;
+        text-align: center;
+        color: #7738c9;
+        line-height: 1.7em;
+    }
+    .wrap-content-author span{
+        display: block;
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+    .description-author{
+        margin: 30px 0;
+        font-size: 1em;
+    }
 
 
 }
