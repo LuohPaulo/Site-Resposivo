@@ -30,7 +30,7 @@ li{
 @media (max-width: 768px){
     .hero-book{
         background: #7738c9;
-        padding: 90px 50px;
+        padding: 90px 60px;
         color: #FFF;
         margin-top: -100px;
         transform: skewy(10deg);
@@ -67,7 +67,6 @@ li{
         position: relative;
         width: 100%;
         margin-top: 100px;
-
     }
 
     .wrap-book .book{
@@ -231,53 +230,57 @@ li{
         padding: 30px;
         line-height: 1.4em;
         background-color: #29D89C;
-        color: #FFF;
+        color: rgba(255, 255, 255, 0.85);
         position: sticky;
         top: 0px;
     }
     .item-cards-chapter:nth-of-type(2){
         background-color: #24BF8A;
-        top: 20px;
+        top: 40px;
     }
     .item-cards-chapter:nth-of-type(3){
         background-color: #22B381;
-        top: 40px;
+        top: 60px;
     }
     .item-cards-chapter:nth-of-type(4){
         background-color: #20A677;
-        top: 60px;
+        top: 80px;
     }
     .item-cards-chapter:nth-of-type(5){
         background-color: #1D996E;
-        top: 80px;
+        top: 100px;
     }
     .item-cards-chapter:nth-of-type(6){
         background-color: #1B8C65;
-        top: 100px;
+        top: 120px;
     }
     .item-cards-chapter:nth-of-type(7){
         background-color: #18805C;
-        top: 120px;
+        top: 140px;
     }
     .item-cards-chapter:nth-of-type(8){
         background-color: #167353;
-        top: 140px;
+        top: 160px;
     }
     .item-cards-chapter:nth-of-type(9){
         background-color: #13664A;
-        top: 160px;
+        top: 180px;
     }
     .item-cards-chapter:nth-of-type(10){
         background-color: #115941;
-        top: 180px;
+        top: 200px;
     }
     .icon-cards-chapter{
         background-color: #7738c9;
         width: 75px;
         height: 75px;
-        display: block;
+        display: grid;
         border-radius: 50%;
         margin: 0 auto;
+        align-items: center;
+    }
+    .material-symbols-outlined{
+        margin-top: -10px;
     }
 
     /* *** Section Chapter-Book *** */
@@ -327,13 +330,37 @@ li{
         font-weight: bold;
     }
     .description-author{
-        margin: 30px 0;
+        margin: 30px 0 60px;
         font-size: 1em;
     }
 
-    svg{
-        border: 1px solid black;
+    /* *** Section Forms *** */
+
+    .forms{
+        background-color: #44d1b6;
+        color: #FFF;
+        padding: 30px;
     }
+    .subtitle-forms{
+        margin-top: 60px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    .subtitle-forms p{
+        color: #7738c9;
+    }
+    .subtitle-forms span{
+        color: #FFF;
+        font-size: 1.7em;
+        display: block;
+        text-align: center;
+    }
+    .description-forms{
+        margin-top: 40px;
+    }
+
 
 
 }
