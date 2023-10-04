@@ -3,7 +3,7 @@
 body{
     padding: 0px;
     box-sizing: border-box;
-    font: normal 16px/22px Sans-serif;
+    font: normal 16px/22px Sans-serif !important;
     margin: 0;
 }
 
@@ -15,10 +15,10 @@ a{
     display: block;
 }
 h2{
-    font-size: 2.5em;
+    font-size: 2.5em ;
 }
 h2 span, h3{
-    font-size: 1.5em ;
+    font-size: 1.5em;
 }
 li{
     list-style: none;
@@ -28,6 +28,16 @@ li{
 /* ***Hero Book*** */
 
 @media (max-width: 768px){
+    h1{
+        font-size: 4em !important;
+    }
+    h2{
+        font-size: 0.8em !important;
+    }
+    h3{
+        font-size: 1.5em !important;
+    }
+
     .hero-book{
         background: #7738c9;
         padding: 90px 60px;
@@ -35,7 +45,7 @@ li{
         margin-top: -100px;
         transform: skewy(10deg);
         text-align: center;
-        
+
     }
     .title-book, .wrap-book, .wrap-BTN, .cubo{
         transform: skewy(-10deg);
@@ -52,8 +62,8 @@ li{
     .title-book h2{
         font-size: 0.8em;
         color: #44d1b6;
-        margin-top: -50px;
-       
+        margin-top: -30px;
+
     }
     .title-book p{
         font-size: 1em;
@@ -91,6 +101,7 @@ li{
         align-items: center;
     }
     .BTN-orange{
+        color: #fff;
         margin-top: 60px;
         background: #FFB300;
         width: 100%;
@@ -99,10 +110,11 @@ li{
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
-        box-shadow: 0px 6px 0px 2px #7738c9,
-                    0px 6px 0px 4px #FFF,
-                    0px 12px 1px 6px #7738c9,
-                    0px 12px 1px 8px #FFF;
+        box-shadow: 0px 0px 0px 2px #FFF, 
+                    0px 6px 0px 4px #7738c9, 
+                    0px 6px 0px 6px #FFF, 
+                    0px 12px 0px 8px #7738c9, 
+                    0px 12px 0px 10px #FFF;
     }.cubo {
         position: relative;
         margin: 0 auto;
@@ -142,15 +154,15 @@ li{
         margin-top: 150px;
     }
     .cards-aprender{
-        padding: 0;        
+        padding: 0;
     }
     .title-aprender{
         color: #7738c9;
-        
+
     }
     .title-aprender p{
         text-transform: uppercase;
-    
+
     }
     .title-aprender span{
         display: block;
@@ -190,23 +202,23 @@ li{
         margin: 0;
         padding: 0;
     }
-    
+
     .chapter-book{
         color: #FFF;
         padding: 90px 0 0;
-        margin-top: 100px;
     }
     .wrap-chapter{
         background-color: #7738c9;
         padding: 90px 40px;
         transform: skewY(10deg);
-    }    
+    }
     .subtitle-book, .chapter-description{
         transform: skewY(-10deg);
     }
     .subtitle-book{
         text-transform: uppercase;
         text-align: center;
+        font-size: 2.5em !important;
     }
     .subtitle-book-small{
         color: #44d1b6;
@@ -283,7 +295,7 @@ li{
         margin-top: -10px;
     }
 
-    /* *** Section Chapter-Book *** */
+    /* *** Section Author *** */
 
     .wrap-photo-author{
         width: 256px;
@@ -342,7 +354,6 @@ li{
         padding: 30px;
     }
     .subtitle-forms{
-        margin-top: 60px;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.5em;
@@ -357,9 +368,64 @@ li{
         display: block;
         text-align: center;
     }
-    .description-forms{
+    .description-forms, .contact-form{
         margin-top: 40px;
     }
-    
+    .title-form{
+        color: #fff !important;
+        font-size: 1em !important;
+    }
+    input {
+        color: #fff !important;
+        border-bottom: 1px solid#fff !important;
+        margin-bottom: 30px !important;
+    }
+    ::placeholder{
+        color: #ffffff80 !important;
+    }
+    /* label color */
+   .input-field label {
+    color: #000;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #000;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #000;
+  }
+    .BTN-green{
+        color: #fff;
+        background: #1B8C65;
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px 0px;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 0px 0px 0px 2px #FFF, 
+                    -4px 4px 0px 0px #44d1b6, 
+                    -4px 4px 0px 2px #FFF, 
+                    -8px 8px 0px 0px #44d1b6, 
+                    -8px 8px 0px 2px #FFF;
+    }
+
 
 }
