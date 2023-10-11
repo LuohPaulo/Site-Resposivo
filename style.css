@@ -154,7 +154,7 @@ li{
         margin-top: 150px;
     }
     .cards-aprender{
-        padding: 0;
+        padding: 0px;
     }
     .title-aprender{
         color: #7738c9;
@@ -425,6 +425,16 @@ li{
                     -4px 4px 0px 2px #FFF, 
                     -8px 8px 0px 0px #44d1b6, 
                     -8px 8px 0px 2px #FFF;
+    }
+
+    /* *** Download *** */
+    .download{
+        background: #7738c9;
+        background: linear-gradient(-90deg, #44d1b6, 0%, #7738c9, 0%);
+        padding: 90px 40px;
+    }
+    .livro-image{
+        width: 100%;
     }
 
 
