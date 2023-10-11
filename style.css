@@ -25,9 +25,9 @@ li{
     margin-top: 60px;
 }
 
-/* ***Hero Book*** */
+/* *** Mobile *** */
 
-@media (max-width: 768px){
+@media (max-width: 1023px){
     h1{
         font-size: 4em !important;
     }
@@ -430,7 +430,6 @@ li{
     /* *** Section Download *** */
 
     .download{
-        /* background: #7738c9; */
         background: linear-gradient(-170deg, #44d1b6 13%, #7738c9 0%);
         padding: 90px 50px 50px;
     }
@@ -459,8 +458,33 @@ li{
         padding: 20px;
         background: #5b2b99;
         color: #fff;
+        font-size: 0.7em;
         text-align: center;
     }
+}
+
+    /* *** Tablet *** */
+
+@media (min-width: 500px){
+    .wrap-book .book {
+        width: 70%;
+    }
+    .wrap-book p{
+        top: -40px;
+        left: 10%;;
+    }
+    .BTN-orange, .BTN-green{
+        width: 50%;
+        margin: 70px auto 0;
+    }
+    .forms{
+        padding: 90px;
+    }
+    .livro-image{
+        padding: 0 90px;
+    }
+
+
 
 
 }
