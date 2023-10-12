@@ -27,7 +27,7 @@ li{
 
 /* *** Mobile *** */
 
-@media (max-width: 1023px){
+@media (min-width: 320px){
     h1{
         font-size: 4em !important;
     }
@@ -51,16 +51,20 @@ li{
         transform: skewy(-10deg);
     }
     .title-book h1{
+        text-align: left;
         font-size: 4em;
-        line-height: 0.8em;
+        line-height: 0.6em;
         margin-top: 15px;
+
     }
     .title-book h1 span{
         font-size: 0.38em;
         display: block;
     }
     .title-book h2{
-        font-size: 0.8em;
+        text-align: left;
+        font-size: 0.67em !important;
+        line-height: 3em;
         color: #44d1b6;
         margin-top: -30px;
 
@@ -465,7 +469,7 @@ li{
 
     /* *** Tablet *** */
 
-@media (min-width: 500px){
+@media (min-width: 426px){
     .wrap-book .book {
         width: 70%;
     }
@@ -473,18 +477,56 @@ li{
         top: -40px;
         left: 10%;;
     }
-    .BTN-orange, .BTN-green{
-        width: 50%;
+    .BTN-orange .BTN-green{
+        width: 80%;
         margin: 70px auto 0;
     }
     .forms{
         padding: 90px;
     }
     .livro-image{
-        padding: 0 90px;
+        padding: 0 15px;
+    }
+
+    /* *** Desktop *** */
+
+@media (min-width: 960px) {
+    .hero-book{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    .title-book, .wrap-book, .wrap-BTN{
+        position: relative;
+    }
+    .title-book{
+        top: 30%;
+        left: -100%;
+        
+    }
+    .wrap-book{
+        background-color: blue;
+        top: 50%;
+        left: 100%;
+    }
+    .wrap-BTN{
+        left: 20%;
+    }
+    .BTN-orange{
+        width: 60%;
+        height: 8%;
+        font-size: 0.7em;
+        margin: 0px;
+        padding: 4px;
+        box-shadow: 0px 0px 0px 2px #FFF, 
+                    4px 4px 0px 0px #7738c9, 
+                    4px 4px 0px 2px #FFF, 
+                    8px 8px 0px 0px #7738c9, 
+                    8px 8px 0px 2px #FFF;
     }
 
 
 
+    }
 
 }
