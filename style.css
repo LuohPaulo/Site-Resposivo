@@ -152,7 +152,7 @@ li{
         transform: skewY(-30deg);
     }
 
-/* - ***** Section APRENDER ***** - */
+ /* - ***** Section APRENDER ***** - */
     .aprender{
         text-align: center;
         margin-top: 150px;
@@ -487,46 +487,70 @@ li{
     .livro-image{
         padding: 0 15px;
     }
+}
 
     /* *** Desktop *** */
 
-@media (min-width: 960px) {
+ @media (min-width: 960px) {
     .hero-book{
+        margin: 0;
+        height: 620px;
+        padding: 20px 100px;
+        background: linear-gradient(-173deg, #7738c9 77%, #fff 0%);
+        transform: skewy(0deg);             /*Rotação desta section zerada*/
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         
     }
-    .title-book, .wrap-book, .wrap-BTN{
+    .title-book, .wrap-book, .wrap-BTN, .cubo{
         position: relative;
+        transform: skewy(0deg);             /* Rotação zerada dos itens que compunham a section .hero-book */
     }
     .title-book{
-        top: 30%;
-        left: -100%;
+        top: 20%;
+        left: -70%;
+        text-align: justify;
         
     }
+    .title-book p{
+        font-size: 0.7em;
+        width: auto;
+        line-height: 0px;
+    }
     .wrap-book{
-        background-color: blue;
-        top: 50%;
-        left: 100%;
+        margin: 0;
+        top: 30%;
+        left: 150%;
+    }
+    .wrap-book p{
+        position: relative;
+        top: -15%;
+        left: 70%;
+
     }
     .wrap-BTN{
-        left: 20%;
+        left: 50%;
+        width: 200px;
     }
     .BTN-orange{
-        width: 60%;
-        height: 8%;
-        font-size: 0.7em;
+        width: 50%;
+        height: 6%;
+        font-size: 0.8em;
         margin: 0px;
-        padding: 4px;
+        padding: 1px;
+        justify-content: center;
+        align-items: center;
         box-shadow: 0px 0px 0px 2px #FFF, 
                     4px 4px 0px 0px #7738c9, 
                     4px 4px 0px 2px #FFF, 
                     8px 8px 0px 0px #7738c9, 
                     8px 8px 0px 2px #FFF;
     }
-
-
-
+    .cubo{
+        top: 0;
+        left: 100%;
     }
+
+
 
 }
