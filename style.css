@@ -38,6 +38,10 @@ li{
         font-size: 1.5em !important;
     }
 
+    .cubo#esq, .cubo#dir{
+        display: none;
+    }
+
     .hero-book{
         background: #7738c9;
         padding: 90px 60px;
@@ -519,7 +523,7 @@ li{
     }
     .wrap-book{
         margin: 0;
-        top: 30%;
+        top: 25%;
         left: 150%;
     }
     .wrap-book p{
@@ -546,11 +550,44 @@ li{
                     8px 8px 0px 0px #7738c9, 
                     8px 8px 0px 2px #FFF;
     }
-    .cubo{
+    .cubo#esq, .cubo#dir{
+        display: flex;
+    }
+    .cubo {
+        margin: 0 auto;
         top: 0;
         left: 100%;
     }
+    .cubo#esq{
+        position: absolute;
+        top: 5%;
+        left: 10%;        
+    }
+    .cubo#dir{
+        position: absolute;
+        top: 17%;
+        left: 85%;        
+    }
+    #dir .lado-sup, #esq .lado-sup{
+        background-color: #fff;
+        width: 34px;
+        height: 34px;
 
-
+    }
+    #dir .lado-esq, #esq .lado-esq{
+        background-color: #44d1b6;
+        width: 43%;
+        height: 15%;
+        top: 26px;
+        left: -13px;
+    }
+    #dir .lado-dir, #esq .lado-dir{
+        background-color: #7738c9;
+        width: 43%;
+        height: 15%;
+        top: 26px;
+        left: 17px;
+    }
+    
 
 }
