@@ -594,6 +594,9 @@ li{
         margin: 0 auto 60px;
         width: 75%;
     }
+    .wrap-aprender{
+        margin-top: -50px;
+    }
 
     .cards-aprender{
         display: grid;
@@ -611,16 +614,31 @@ li{
         padding: 0 20px;
     }
 
-    .cubo-aprender{
+    .cubo-aprender, .cubo-aprender#esq, .cubo-aprender#dir{
         display: flex;
-        transform: skewY(-10deg);
-
+        transform: skewY(0deg);
     }
-
     .cubo-aprender {
         position: absolute;
         margin-left: 10px;
         top: -13%;
+        transform: skewY(-10deg);
+    }
+    .cubo-aprender#esq, .cubo-aprender#dir{
+        position: relative;
+    }
+    #esq .lado-sup, #dir .lado-sup{
+        background-color: #44d1b6;
+    }
+    #esq .lado-esq, #dir .lado-esq{
+        background-color: #7738c9;
+    }
+    #esq .lado-dir, #dir .lado-dir{
+        background-color: #FFF;
+    }
+    .cubo-aprender#dir{
+        float: right;
+        top: 0px;
     }
 
 }
