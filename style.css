@@ -38,7 +38,7 @@ li{
         font-size: 1.5em !important;
     }
 
-    .cubo#esq, .cubo#dir{
+    .cubo#esq, .cubo#dir, .cubo-aprender{
         display: none;
     }
 
@@ -123,7 +123,7 @@ li{
                     0px 6px 0px 6px #FFF, 
                     0px 12px 0px 8px #7738c9, 
                     0px 12px 0px 10px #FFF;
-    }.cubo {
+    }.cubo, .cubo-aprender{
         position: relative;
         margin: 0 auto;
         top: 110px;;
@@ -131,7 +131,7 @@ li{
         height: 70px;
     }
     .lado-sup {
-        position: fixed;
+        position: relative;
         width: 100%;
         height: 100%;
         background-color: #44d1b6;
@@ -588,6 +588,39 @@ li{
         top: 26px;
         left: 17px;
     }
-    
+
+    /* *** Section Aprender *** */
+    .aprender{
+        margin: 0 auto 60px;
+        width: 75%;
+    }
+
+    .cards-aprender{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .item-cards-aprender{
+        margin: 0;
+    }
+    .item-cards-aprender header{
+        display: inline-flex;
+        align-items: center;
+        text-align: left;
+    }
+    .item-cards-aprender .p{
+        padding: 0 20px;
+    }
+
+    .cubo-aprender{
+        display: flex;
+        transform: skewY(-10deg);
+
+    }
+
+    .cubo-aprender {
+        position: absolute;
+        margin-left: 10px;
+        top: -13%;
+    }
 
 }
