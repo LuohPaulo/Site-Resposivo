@@ -38,7 +38,7 @@ li{
         font-size: 1.5em !important;
     }
 
-    .cubo#esq, .cubo#dir, .cubo-aprender{
+    .cubo#esq, .cubo#dir, .cubo-aprender, .wrap-linhas{
         display: none;
     }
 
@@ -642,11 +642,12 @@ li{
         left: 12%;
     }
     .wrap-linhas{
-        position: relative;
+        display: block;
+        position: absolute;
         transform: rotate(40deg);
-        width: 22em;
-        top: 4em;
-        left: 36em;
+        width: 21em;
+        top: 24em;
+        left: 57em;
 
     }
     .wrap-linhas p{
